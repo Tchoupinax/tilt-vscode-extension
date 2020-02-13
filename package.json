@@ -1,0 +1,35 @@
+{
+  "name": "tilt",
+  "displayName": "Tilt",
+  "description": "Tiltfile language support for VSCode (https://tilt.dev/)",
+  "author": "Tchoupinax <corentinfiloche@hotmail.fr>",
+  "publisher": "Tchoupinax",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Tchoupinax/tilt-extension"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "tiltfile",
+      "aliases": ["Tilt", ""],
+      "extensions": ["Tiltfile"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "tiltfile",
+      "scopeName": "source.Tiltfile",
+      "path": "./syntaxes/.tmLanguage.json"
+    }]
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  }
+}

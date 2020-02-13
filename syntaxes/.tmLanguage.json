@@ -1,0 +1,75 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Tilt",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"match": "\\b(docker_build|helm|sync|restart_container|local_git_repo)\\b",
+					"captures": {
+						"0": {
+							"name": "variable.language"
+						}
+					}
+				},
+				{
+					"match": "\\b(k8s_yaml|live_update|local|fall_back_on)\\b",
+					"captures": {
+						"0": {
+							"name": "keyword.control"
+						}
+					}
+				},
+				{
+					"match": "(=)\\s*",
+					"captures": {
+						"1": {
+							"name": "keyword.operator.assignment.js"
+						}
+					}
+				},
+				{
+					"match": "\\b(^[a-zA-Z]*)\\b",
+					"captures": {
+						"0": {
+							"name": "variable.name"
+						}
+					}
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted",
+			"begin": "'",
+			"end": "'",
+			"captures": {
+				"0": {
+					"name": "string.quoted.single"
+				}
+			},
+			"patterns": [
+				{
+					"name": "constant.character.escape.osef",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment",
+			"begin": "#",
+			"end": "\n"
+		}
+	},
+	"scopeName": "source.Tiltfile"
+}
