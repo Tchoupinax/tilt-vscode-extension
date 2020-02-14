@@ -5,9 +5,9 @@
   "author": "Tchoupinax <corentinfiloche@hotmail.fr>",
   "publisher": "Tchoupinax",
   "icon": "assets/tilt.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
-    "vscode": "^1.42.0"
+    "vscode": "^1.35.0"
   },
   "repository": {
     "type" : "git",
