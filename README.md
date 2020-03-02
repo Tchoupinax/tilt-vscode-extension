@@ -2,6 +2,8 @@
 
 Vscode extension for supporting syntax highlight and comments for `Tiltfile` (https://tilt.dev/)
 
+Show it on [VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=Tchoupinax.tilt) 🐹
+
 ## Features
 
 - Syntax-highlighting
