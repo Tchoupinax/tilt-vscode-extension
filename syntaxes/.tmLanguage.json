@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "\\b(docker_build|k8s_resource|enable_feature|default_registry|k8s_resource_assembly_version|run|helm|sync|trigger|restart_container|local_git_repo)\\b",
+					"match": "\\b(k8s_resource|enable_feature|default_registry|fall_back_on|k8s_resource_assembly_version|run|helm|sync|trigger|restart_container|local_git_repo)\\b",
 					"captures": {
 						"0": {
 							"name": "variable.language"
@@ -24,7 +24,7 @@
 					}
 				},
 				{
-					"match": "\\b(k8s_yaml|live_update|local|fall_back_on|port_forwards)\\b",
+					"match": "\\b(docker_build|k8s_yaml|live_update|local|allow_k8s_contexts|port_forwards)\\b",
 					"captures": {
 						"0": {
 							"name": "keyword.control"
