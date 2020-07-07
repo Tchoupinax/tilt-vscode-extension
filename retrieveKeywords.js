@@ -1,7 +1,8 @@
 // Dirty Script to retrieve everything
-var keywords = '';
+// Go on https://docs.tilt.dev/api.html and copy/paste the script
+let keywords = '';
 document.querySelectorAll("#functions ~ ul").item(0).querySelectorAll("li").forEach(e => {
-    var keyword = e.querySelector("a").innerHTML;
+    const keyword = e.querySelector("a").innerHTML;
 
     if (keywords.length !== 0) {
         keywords = keywords + "|" + keyword
