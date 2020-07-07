@@ -24,7 +24,7 @@
 					}
 				},
 				{
-					"match": "\\b(docker_build|k8s_yaml|live_update|local|allow_k8s_contexts|port_forwards)\\b",
+					"match": "\\b(allow_k8s_contexts|analytics_settings|blob|custom_build|dc_resource|decode_json|decode_yaml|decode_yaml_stream|default_registry|disable_snapshots|docker_build|docker_compose|docker_prune_settings|enable_feature|encode_json|encode_yaml|encode_yaml_stream|fail|fall_back_on|filter_yaml|helm|include|k8s_context|k8s_kind|k8s_resource|k8s_yaml|kustomize|listdir|load|local|local_resource|read_file|read_json|read_yaml|read_yaml_stream|restart_container|run|secret_settings|set_team|struct|sync|trigger_mode|update_settings|version_settings|watch_file|workload_to_resource_function|os.getcwd|os.getenv|os.putenv|os.unsetenv|os.path.abspath|os.path.basename|os.path.dirname|os.path.exists|os.path.join|os.path.realpath|config.define_bool|config.define_string|config.define_string_list|config.parse|config.set_enabled_resources)\\b",
 					"captures": {
 						"0": {
 							"name": "keyword.control"
