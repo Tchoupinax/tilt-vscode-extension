@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.0.4 | 2020-07-07 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.4/vspackage)
+
+- Supports keywords for `helm_remote` extension (https://github.com/tilt-dev/tilt-extensions/tree/master/helm_remote)
+- Change child commands to harmonize color
+
 ### 1.0.3 | 2020-04-04 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.3/vspackage)
 
 - Supports `allow_k8s_contexts` keyword
