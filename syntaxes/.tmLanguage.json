@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "\\b(k8s_resource|enable_feature|default_registry|ignore|repo_name|live_update|repo_url|set|release_name|username|password|values|fall_back_on|k8s_resource_assembly_version|run|helm|trigger|local_git_repo)\\b",
+					"match": "\\b(enable_feature|default_registry|resource_deps|entrypoint|ignore|repo_name|live_update|repo_url|set|release_name|username|password|values|fall_back_on|k8s_resource_assembly_version|run|helm|trigger|local_git_repo)\\b",
 					"captures": {
 						"0": {
 							"name": "variable.language"
@@ -24,7 +24,7 @@
 					}
 				},
 				{
-					"match": "\\b(docker_build|k8s_yaml|helm_remote|local|load|allow_k8s_contexts|restart_container|sync|port_forwards)\\b",
+					"match": "\\b(docker_build|k8s_resource|k8s_yaml|helm_remote|local|load|watch_file|min_tilt_version|allow_k8s_contexts|restart_container|sync|port_forwards|docker_build_with_restart)\\b",
 					"captures": {
 						"0": {
 							"name": "keyword.control"
