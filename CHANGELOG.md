@@ -1,7 +1,13 @@
 # Changelog
 
-### 1.0.4 | 2020-07-07 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.4/vspackage)
+### 1.0.5 | 2020-07-10 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.5/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
 
+- Supports new keywords: `docker_build_with_restart`, `watch_file`, `min_tilt_version`, `entrypoint`, `resource_deps`
+- Change color level for `k8s_resource` keyword
+
+### 1.0.4 | 2020-07-07 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.4/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
+
+- Now available on open-vsx.org !
 - Supports keywords for `helm_remote` extension (https://github.com/tilt-dev/tilt-extensions/tree/master/helm_remote)
 - Change child commands to harmonize color
 
