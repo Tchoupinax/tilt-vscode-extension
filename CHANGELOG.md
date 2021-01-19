@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.6 | 2021-01-12 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.6/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
+
+- Rename LICENCE.md to LICENSE.md
+
 ### 1.0.5 | 2020-07-10 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.5/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
 
 - Supports new keywords: `docker_build_with_restart`, `watch_file`, `min_tilt_version`, `entrypoint`, `resource_deps`
