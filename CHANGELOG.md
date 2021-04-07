@@ -3,6 +3,7 @@
 ### 1.0.7 | 2021-04-07 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.7/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
 
 - Add syntax color for double quoted string
+
 ### 1.0.6 | 2021-01-12 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.6/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
 
 - Rename LICENCE.md to LICENSE.md
