@@ -6,7 +6,10 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#strings-single-quote"
+		},
+		{
+			"include": "#strings-double-quote"
 		},
 		{
 			"include": "#comments"
@@ -49,10 +52,26 @@
 				}
 			]
 		},
-		"strings": {
+		"strings-single-quote": {
 			"name": "string.quoted",
 			"begin": "'",
 			"end": "'",
+			"captures": {
+				"0": {
+					"name": "string.quoted.single"
+				}
+			},
+			"patterns": [
+				{
+					"name": "constant.character.escape.osef",
+					"match": "\\\\."
+				}
+			]
+		},
+		"strings-double-quote": {
+			"name": "string.quoted",
+			"begin": "\"",
+			"end": "\"",
 			"captures": {
 				"0": {
 					"name": "string.quoted.single"
