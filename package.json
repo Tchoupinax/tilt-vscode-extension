@@ -5,13 +5,13 @@
   "author": "Tchoupinax <corentinfiloche@hotmail.fr>",
   "publisher": "Tchoupinax",
   "icon": "assets/tilt.png",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "engines": {
     "vscode": "^1.35.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Tchoupinax/tilt-extension"
+    "type": "git",
+    "url": "https://github.com/Tchoupinax/tilt-extension"
   },
   "categories": [
     "Programming Languages"
@@ -25,20 +25,32 @@
     "k8s"
   ],
   "contributes": {
-    "languages": [{
-      "id": "tiltfile",
-      "aliases": ["Tilt", ""],
-      "extensions": ["Tiltfile"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "tiltfile",
-      "scopeName": "source.Tiltfile",
-      "path": "./syntaxes/.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "tiltfile",
+        "aliases": [
+          "Tilt",
+          ""
+        ],
+        "extensions": [
+          "Tiltfile"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tiltfile",
+        "scopeName": "source.Tiltfile",
+        "path": "./syntaxes/.tmLanguage.json"
+      }
+    ]
   },
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish"
+  },
+  "dependencies": {
+    "vsce": "^2.5.0"
   }
 }

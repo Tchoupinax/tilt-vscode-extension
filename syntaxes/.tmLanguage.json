@@ -3,7 +3,13 @@
 	"name": "Tilt",
 	"patterns": [
 		{
+			"include": "#variables"
+		},
+		{
 			"include": "#keywords"
+		},
+		{
+			"include": "#strings-triple-quote"
 		},
 		{
 			"include": "#strings-single-quote"
@@ -19,7 +25,7 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "\\b(enable_feature|default_registry|resource_deps|entrypoint|ignore|repo_name|live_update|repo_url|set|release_name|username|password|values|fall_back_on|k8s_resource_assembly_version|run|helm|trigger|local_git_repo)\\b",
+					"match": "\\b(enable_feature|base_suffix|namespace|docker_compose|default_registry|resource_deps|entrypoint|ignore|repo_name|live_update|repo_url|set|release_name|username|password|values|fall_back_on|k8s_resource_assembly_version|run|helm|trigger|local_git_repo)\\b",
 					"captures": {
 						"0": {
 							"name": "variable.language"
@@ -27,7 +33,7 @@
 					}
 				},
 				{
-					"match": "\\b(docker_build|k8s_resource|k8s_yaml|helm_remote|local|load|watch_file|min_tilt_version|allow_k8s_contexts|restart_container|sync|port_forwards|docker_build_with_restart)\\b",
+					"match": "\\b(local_output|namespace_create|secret_create_generic|docker_build|k8s_resource|k8s_yaml|helm_remote|local|load|watch_file|min_tilt_version|allow_k8s_contexts|restart_container|sync|port_forwards|docker_build_with_restart)\\b",
 					"captures": {
 						"0": {
 							"name": "keyword.control"
@@ -84,10 +90,46 @@
 				}
 			]
 		},
+		"variables": {
+			"name": "variables",
+			"patterns": [
+				{
+					"name": "variable.parameter",
+					"match": "([a-zA-Z_]*)[ ]?="
+				}
+			]
+		},
 		"comments": {
 			"name": "comment",
 			"begin": "#",
 			"end": "\n"
+		},
+    "strings-triple-quote": {
+			"name": "strings.triple.quote",
+      "begin": "\"\"\"",
+			"beginCaptures": {
+				"0": {
+					"name": "string.quoted.single"
+				},
+				"1": {
+					"name": "string.quoted.single"
+				}
+			},
+      "end": "\"\"\"",
+			"endCaptures": {
+				"0": {
+					"name": "string.quoted.single"
+				},
+				"1": {
+					"name": "string.quoted.single"
+				}
+			},
+			"patterns": [
+				{
+					"name": "string.quoted",
+					"match": "."
+				}
+			]
 		}
 	},
 	"scopeName": "source.Tiltfile"
