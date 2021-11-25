@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.8 | 2021-11-25 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.8/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
+
+- Support multilines triple quoted strings
 ### 1.0.7 | 2021-04-07 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.7/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
 
 - Add syntax color for double quoted string
