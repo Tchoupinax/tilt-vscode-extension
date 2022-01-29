@@ -51,6 +51,6 @@
     "publish": "vsce publish"
   },
   "dependencies": {
-    "vsce": "^2.5.0"
+    "vsce": "^2.6.5"
   }
 }
