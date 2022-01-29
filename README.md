@@ -17,5 +17,11 @@ Example of the syntax (color changes according your theme) :
 ## Publication
 
 ```
+npm run package
+Using the interface to upload the archive => https://marketplace.visualstudio.com/manage/publishers/tchoupinax
+```
+
+
+```
 ovsx publish --pat 'TOKEN'
 ```

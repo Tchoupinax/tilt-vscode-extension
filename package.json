@@ -5,7 +5,7 @@
   "author": "Tchoupinax <corentinfiloche@hotmail.fr>",
   "publisher": "Tchoupinax",
   "icon": "assets/tilt.png",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "engines": {
     "vscode": "^1.35.0"
   },
