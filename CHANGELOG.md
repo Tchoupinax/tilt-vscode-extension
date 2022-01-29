@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.9 | 2022-01-29 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.9/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
+
+- Upgrade dependancies because of vulnerability with simple-get
+
 ### 1.0.8 | 2021-11-25 [VSIX](https://marketplace.visualstudio.com/_apis/public/gallery/publishers/Tchoupinax/vsextensions/tilt/1.0.8/vspackage) | [open-vsx.org](https://open-vsx.org/extension/Tchoupinax/tilt)
 
 - Support multilines triple quoted strings
